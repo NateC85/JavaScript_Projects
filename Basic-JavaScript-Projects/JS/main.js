@@ -1,5 +1,5 @@
 var x = "10" ; // defining a variable(x) & giving it a number value(10)
-var y = "40" ; // defining a variable (y) & giving it a nuber value(40)
+var y = "40" ; // defining a variable (y) & giving it a number value(40)
 document.write(x * y) ; // uses an expression(x * y) and displays the result(400)
 
 var a = "I will complete this Bootcamp," ; // defining a variable(a) & giving it a string value.
