@@ -7,3 +7,9 @@ function Functions() {
 function displayDate() {
     document.getElementById("time").innerHTML = Date();
 }
+
+function myFunction() {
+    var sentence = "I have been" ;
+    sentence += " so much exciting information!" ;
+    document.getElementById("Concatenate").innerHTML = sentence ;
+}
