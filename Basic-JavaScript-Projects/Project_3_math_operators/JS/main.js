@@ -38,6 +38,7 @@ var n = 75 ; // creates a variable & passes a number value
 n++ ; // uses the increment operator to count one step up from the value of the variable
 document.write(n) ; // displays the result(76)
 
+document.write("</br>") ;
 
 var g = 43 ; // creates a variable & passes a number value
 g-- ;  // uses the decrement operator to count one step down from the value of the variable
