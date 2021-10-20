@@ -5,3 +5,9 @@ function full_Sentence() {
     var complete_Sentence = sect_1.concat(sect_2, sect_3) ;
     document.getElementById("Concatenate").innerHTML = complete_Sentence ;
 }
+
+function slice_Method() {
+    var Sentence = "I am a leaf on the wind; watch how I soar." ;
+    var Section = Sentence.slice(25,44) ;
+    document.getElementById("Slice").innerHTML = Section ;
+}
