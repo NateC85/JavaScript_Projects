@@ -1,3 +1,5 @@
+// Defining a function that creates a timer that counts down from number choosen.
+
 function countdown() {
     var seconds = document.getElementById("seconds").value ;
     
