@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head></head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
     <body>
 
-        <p>How many seconds would you like to set your alarm for?</p>
-        <input id="seconds" value="" />
-        <button onclick="countdown()">Click here</button>
-        <p id="timer"></p>
+        <h2>Automatic Slideshow</h2>
+        <p>This will change every 3 seconds:</p>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="Images\thumb1.jpg" style="width: 100%">
+                <div class="text">Slide 1</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="Images\thumb2.jpg" style="width: 100%">
+                <div class="text">Slide 2</div>
+            </div>
+
+            <div class="mySlides fade">3 / 4</div>
+                <div class="numbertext"></div>
+                <img src="Images\thumb3.jpg" style="width: 100%">
+                <div class="text">Slide 3</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images\thumb4.jpg" style="width: 100%">
+                <div class="text">Slide 4</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
 
 
-
-
-        <script src="JS\main.js"></script>
     </body>
 </html>
