@@ -59,11 +59,11 @@ function myFunction(a, b) {
 
 // Creating an object, using the let keyword.
 let dog = {
-    breed: "Rottweiler",
-    color: "black and brown",
-    age: "3 years old"
+    breed: "Rottweiler.",
+    color: " black and brown ",
+    age: "3 year old",
     description: function() {
-        return "This dog is " + this.age + this.color + this.breed;
+        return "This dog is a " + this.age + this.color + this.breed;
     }
 };
 document.getElementById("Dog_Object").innerHTML = dog.description();
@@ -77,7 +77,7 @@ for (let i = 0; i < 20; i++) {
 document.getElementById("break").innerHTML = text;
 
 // Using the continue statement to break an iteration, if a specified condition occurs.
-let text = "";
+
 for (let i = 0; i < 20; i++) {
     if (i === 9) { continue; }
     text += "The number is " + i + "<br>";
