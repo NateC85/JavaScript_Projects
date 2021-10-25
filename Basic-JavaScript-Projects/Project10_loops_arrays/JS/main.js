@@ -67,3 +67,19 @@ let dog = {
     }
 };
 document.getElementById("Dog_Object").innerHTML = dog.description();
+
+// Using the break statement to end the loop.
+let text = "";
+for (let i = 0; i < 20; i++) {
+    if (i === 13) { break; }
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("break").innerHTML = text;
+
+// Using the continue statement to break an iteration, if a specified condition occurs.
+let text = "";
+for (let i = 0; i < 20; i++) {
+    if (i === 9) { continue; }
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("continue").innerHTML = text;
