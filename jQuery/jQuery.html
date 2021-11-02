@@ -5,8 +5,8 @@
     </head>
 <!-- Using the jQuery library -->
     <script>
-            $(document).ready(function(){
-                $("html").append (
+            $(document).ready(function(){ // Sayin that when the document is loaded, run this function
+                $("html").append ( // Grab the html tag and append(add) the following data.
                     "<body>\
                         <div id='container'>\
                             <div id='inner'>\
@@ -19,12 +19,12 @@
                         </div>\
                     </body>"
                 );
-                $("#2").css({"color":"red"});
-                $("#3").click(function() {
-                    $("h1").hide();
+                $("#2").css({"color":"red"}); // Turns the font color of paragraph 2 red.
+                $("#3").click(function() { 
+                    $("h1").hide(); // hides the h1 element after clicking on paragraph 3
                     $("#1").click(function() {
-                        console.log("Hello, there");
-                        $("#4").fadeOut(3500);
+                        console.log("Hello, there"); // Displays "Hello, there" in the console after you click on paragraph 1
+                        $("#4").fadeOut(3500); // Fades out paragraph 4 after 3.5 seconds after clicking on paragraph 1
                     });
                 });
             });
