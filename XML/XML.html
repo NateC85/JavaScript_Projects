@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p id="XML_Example"></p>
+        
+        <script>
+            var XML_Parser, XML_Document;
+
+            // Creates a text string
+            var Kid = "<kid>" +
+            "<oldest>Jovanni</oldest>" +
+            "<grade>2nd</grade>" +
+            "<hobby>Build Legos</hobby>" +
+            "<age>7</age>" +
+            "</kid>";
+
+            // Creates an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            // Creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Kid, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML = XML_Document.getElementsByTagName("oldest") [0].childNodes[0].nodeValue;
+
+        </script>
+
+    </body>
+</html>
