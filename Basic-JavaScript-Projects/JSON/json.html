@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <p id="myCat"></p>
+    <p id="myCat_2"></p>
+    
+
+    <script>
+        /* JavaScript dictionary object */
+        var Cat = {name: "Peachez", breed: "Domestic shorthair", color: "black"};
+        /* Converts JavaScript objects to string format */
+        var JSONstring = JSON.stringify(Cat);
+        document.getElementById("myCat").innerHTML = JSONstring;
+
+        /* This is a JSON string variable */
+        var cat = '{"name": "Thomas", "breed": "Tabby", "color": "orange"}';
+        /* Converts JSON strings to JavaScript objects */
+        var JSONstring2 = JSON.parse(cat);
+        document.getElementById("myCat_2").innerHTML = JSONstring2.name + " the " + JSONstring2.color +" " + JSONstring2.breed;
+
+        /* Set the data as a key/value pair to be saved locally in your browser */
+        localStorage.setItem("breed", "Domestic shorthair");
+        /* Then use the key "" to return its value "" */
+        document.getElementById("myCat").innerHTML = localStorage.getItem("breed");
+    </script>
+</body>
+</html>
