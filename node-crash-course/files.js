@@ -35,3 +35,10 @@ fs.mkdir('./assets', (err) => {
     })
 }
 // deleting files
+if (fs.existsSync('./deleteme.txt')) {
+    fs.unlink('./deleteme.txt', (err) => {
+        if (err) {
+            console.log('file deleted');
+        }
+    })
+};
