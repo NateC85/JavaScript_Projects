@@ -1,5 +1,15 @@
 {
   "dependencies": {
+    "express": "^4.18.1",
     "lodash": "^4.17.21"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "lesson-5-6",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
