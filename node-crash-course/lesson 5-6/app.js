@@ -16,14 +16,14 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
     // res.send('<p>About page</p>');
-    res.render('about');
+    res.render('about', { title: 'About' });
 });
 
 app.get('/blogs/create', (req, res) => {
-    res.render('create');
+    res.render('create', { title: 'Create' });
 })
 
 // 404 Page, always put at the bottom
 app.use((req, res) => {
-    res.status(404).render('404');
+    res.status(404).render('404', { title: '404' });
 });
