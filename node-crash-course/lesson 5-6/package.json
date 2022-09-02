@@ -12,7 +12,7 @@
   "name": "lesson-5-6",
   "version": "1.0.0",
   "main": "server.js",
-  "author": "",
+  "author": "Nathan Crawford",
   "license": "ISC",
-  "description": ""
+  "description": "A simple blog app."
 }

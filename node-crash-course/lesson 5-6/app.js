@@ -8,7 +8,7 @@ const { result } = require('lodash');
 const app = express();
 
 // Connect to Mongodb
-const dbURI = 'mongodb+srv://NateC85:OllieJo85!@cluster0.9tcxizm.mongodb.net/Cluster0?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://NateC85:OllieJo85!@cluster0.9tcxizm.mongodb.net/Node-tuts?retryWrites=true&w=majority'
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => app.listen(3000))
