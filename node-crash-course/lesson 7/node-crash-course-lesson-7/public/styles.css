@@ -55,6 +55,15 @@
     }
 
     /* index styles */
+    .blogs a {
+      display: block;
+      margin: 40px 0;
+      padding-left: 30px;
+      border-left: 6px solid #dc143c;
+    }
+    .blogs a:hover h3 {
+      color: #dc143c;
+    }
 
     /* details styles */
 

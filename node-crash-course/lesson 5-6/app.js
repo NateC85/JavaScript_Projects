@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const Blog = require('./models/blog');
 const { result } = require('lodash');
+const { render } = require('ejs');
 
 // Express app
 const app = express();
@@ -54,6 +55,17 @@ app.post('/blogs', (req, res) => {
         .catch((err) =>{
             console.log(err);
         });
+});
+
+app.get('/blogs/:id', (res, req) => {
+    const id = req.params.id;
+    Blog.findById(id)
+        .then(result => {
+            res.render('details', { blog: result, title: 'Blog Details'});
+        })
+        .catch(err => {
+            console.log(err);
+        })
 });
 
 app.get('/blogs/create', (req, res) => {
